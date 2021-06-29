@@ -39,14 +39,14 @@ namespace ScreenBlank
             this.ScreenList.FormattingEnabled = true;
             this.ScreenList.Location = new System.Drawing.Point(12, 12);
             this.ScreenList.Name = "ScreenList";
-            this.ScreenList.Size = new System.Drawing.Size(120, 148);
+            this.ScreenList.Size = new System.Drawing.Size(196, 148);
             this.ScreenList.TabIndex = 0;
             // 
             // BlankButton
             // 
             this.BlankButton.Location = new System.Drawing.Point(11, 178);
             this.BlankButton.Name = "BlankButton";
-            this.BlankButton.Size = new System.Drawing.Size(119, 23);
+            this.BlankButton.Size = new System.Drawing.Size(197, 23);
             this.BlankButton.TabIndex = 1;
             this.BlankButton.Text = "Blank";
             this.BlankButton.UseVisualStyleBackColor = true;
@@ -56,7 +56,7 @@ namespace ScreenBlank
             // 
             this.ExitButton.Location = new System.Drawing.Point(11, 207);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(119, 23);
+            this.ExitButton.Size = new System.Drawing.Size(197, 23);
             this.ExitButton.TabIndex = 2;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
@@ -66,10 +66,11 @@ namespace ScreenBlank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(142, 242);
+            this.ClientSize = new System.Drawing.Size(220, 242);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.BlankButton);
             this.Controls.Add(this.ScreenList);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Main";
             this.ShowIcon = false;

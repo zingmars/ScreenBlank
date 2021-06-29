@@ -5,6 +5,16 @@ namespace ScreenBlank.Forms
 {
     public partial class BlankForm : Form
     {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x80;
+                return cp;
+            }
+        }
+
         public BlankForm(Screen screen)
         {
             this.StartPosition = FormStartPosition.Manual;
@@ -12,6 +22,8 @@ namespace ScreenBlank.Forms
 
             InitializeComponent();
 
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.ShowInTaskbar = false;
             this.Size = new Size(screen.Bounds.Width, screen.Bounds.Height);
         }
     }
