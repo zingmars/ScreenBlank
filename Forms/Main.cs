@@ -19,7 +19,8 @@ namespace ScreenBlank
 
             foreach (var screen in screens)
             {
-                ScreenList.Items.Add(screen.DeviceName, CheckState.Unchecked);
+                string fullname = String.Format("{0}{1} - {2}x{3} at {4};{5}", screen.DeviceName, screen.Primary ? "(*)" : "", screen.Bounds.Width, screen.Bounds.Height, screen.Bounds.X, screen.Bounds.Y);
+                ScreenList.Items.Add(fullname, CheckState.Unchecked);
             }
         }
 

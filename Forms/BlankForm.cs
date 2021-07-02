@@ -26,5 +26,13 @@ namespace ScreenBlank.Forms
             this.ShowInTaskbar = false;
             this.Size = new Size(screen.Bounds.Width, screen.Bounds.Height);
         }
+
+        private void BlankForm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }

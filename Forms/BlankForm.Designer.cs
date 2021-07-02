@@ -45,6 +45,7 @@ namespace ScreenBlank.Forms
             this.ShowInTaskbar = false;
             this.Text = "BlankForm";
             this.TopMost = true;
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BlankForm_KeyPress);
             this.ResumeLayout(false);
 
         }
